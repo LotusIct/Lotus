@@ -1,0 +1,161 @@
+.partners-section{
+  padding:20px 5% 80px 5%;
+  background:linear-gradient(180deg,#F6F8FA 0%, #ffffff 100%);
+  overflow:hidden;
+}
+
+.partners-container{
+  max-width:1300px;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  gap:60px;
+}
+
+/* Header */
+.partners-header{
+  max-width:720px;
+}
+
+.partners-badge{
+  display:inline-block;
+  padding:8px 18px;
+  border-radius:20px;
+  background:rgba(230,36,69,.08);
+  color:#E62445;
+  font-weight:600;
+  font-size:13px;
+  margin-bottom:6px;
+}
+
+.partners-header h2{
+  font-size:46px;
+  font-weight:700;
+  color:#000;
+  margin-bottom:14px;
+  line-height:1.1;
+}
+
+.partners-header p{
+  font-size:18px;
+  color:#444;
+  line-height:1.6;
+  max-width:620px;
+}
+
+/* Ticker */
+.partners-ticker{
+  width:100%;
+  overflow:hidden;
+  position:relative;
+}
+
+
+.ticker-track{
+  display:flex;
+  gap:28px;
+  width:max-content;
+  white-space: nowrap;        /* impede quebra */
+  animation:tickerScroll 35s linear infinite;
+}
+
+.ticker-track > *{
+  flex-shrink:0;              /* impede encolhimento */
+}
+/* pausa ao hover */
+.partners-ticker:hover .ticker-track{
+  animation-play-state: paused;
+}
+
+/* Card (reaproveitando layout bonito) */
+.partner-card{
+  padding:8px 2px;
+  min-width:140px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  transition:.85s cubic-bezier(.2,.8,.2,1);
+  cursor:pointer;
+  position:relative;
+  overflow:hidden;
+}
+
+
+.partner-card:hover::before{
+  opacity:1;
+}
+
+
+
+/* Logo */
+.partner-logo{
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.partner-logo img{
+  max-height:100%;
+  max-width:140px;
+  object-fit:contain;
+  filter:grayscale(100%);
+  transition:.4s;
+}
+
+.partner-card:hover .partner-logo img{
+  filter:grayscale(0%);
+  transform:scale(1.05);
+}
+
+/* Name */
+.partner-name{
+  font-size:16px;
+  font-weight:600;
+  color:#000;
+  letter-spacing:.4px;
+}
+
+/* Animation */
+@keyframes tickerScroll{
+  0%{
+    transform:translateX(0);
+  }
+  100%{
+    transform:translateX(-50%);
+  }
+}
+
+/* Mobile */
+@media(max-width:768px){
+  .partners-section{
+    padding:80px 6%;
+  }
+
+  .partners-header h2{
+    font-size:32px;
+  }
+
+  .partners-header p{
+    font-size:16px;
+  }
+
+  .partner-card{
+    min-width:200px;
+    padding:22px;
+  }
+
+  .partner-logo{
+    height:55px;
+  }
+
+  .partner-name{
+    font-size:15px;
+  }
+
+  .ticker-track{
+    animation:tickerScroll 25s linear infinite;
+  }
+}

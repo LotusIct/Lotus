@@ -1,0 +1,363 @@
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+.mega-header {
+  width: 100%;
+  height: 80px;
+  background: #F6F8FA;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.mega-container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 42px;
+}
+
+/* ========================= */
+/* MENU */
+/* ========================= */
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-title {
+  color: #000000;
+  font-weight: 500;
+  font-size: 15px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.menu-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #E62445;
+  transition: 0.3s;
+}
+
+.menu-item:hover .menu-title {
+  color: #E62445;
+}
+
+.menu-item:hover .menu-title::after {
+  width: 100%;
+}
+
+/* ========================= */
+/* DROPDOWN FULL WIDTH */
+/* ========================= */
+
+.mega-dropdown {
+  position: fixed;
+  left: 0;
+  top: 80px;
+  width: 100vw;
+  background: #F6F8FA;
+  animation: fadeDown 0.25s ease;
+  z-index: 998;
+  border-top: 1px solid #E5E7EB;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mega-dropdown-inner {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+  position: relative;
+}
+
+/* ========================= */
+/* CONTENT GRID (SCROLL HORIZONTAL) */
+/* ========================= */
+
+.mega-content {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  gap: 40px;
+  padding: 20px 120px;   /* espaço para setas */
+  scrollbar-width: none;
+  position: relative;
+}
+
+.mega-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* ========================= */
+/* COLUMNS */
+/* ========================= */
+
+.mega-column {
+  min-width: 300px;
+  flex-shrink: 0;
+}
+
+.mega-column h4 {
+  color: #E62445;
+  font-size: 13px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.mega-column a {
+  display: block;
+  color: #2F2F2F;
+  font-size: 15px;
+  margin-bottom: 12px;
+  text-decoration: none;
+  transition: 0.25s;
+  font-weight: 400;
+}
+
+.mega-column a:hover {
+  color: #E62445;
+  transform: translateX(6px);
+}
+
+/* ========================= */
+/* CTA ENTERPRISE */
+/* ========================= */
+
+.menu-cta {
+  display: flex;
+  align-items: center;
+}
+
+.cta-enterprise {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  padding: 6px 0;
+  letter-spacing: 0.3px;
+  transition: 0.3s ease;
+}
+
+.cta-enterprise .cta-line {
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #E62445;
+  transition: 0.35s ease;
+}
+
+.cta-enterprise:hover {
+  color: #E62445;
+}
+
+.cta-enterprise:hover .cta-line {
+  width: 100%;
+}
+
+/* ========================= */
+/* NAVEGAÇÃO COM SETAS */
+/* ========================= */
+
+.mega-nav-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.mega-arrow {
+  pointer-events: all;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #E62445;
+  color: white;
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 20;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+
+.mega-arrow:hover {
+  transform: translateY(-50%) scale(1.12);
+}
+
+.mega-arrow.left {
+  left: 30px;
+}
+
+.mega-arrow.right {
+  right: 30px;
+}
+/* ESCONDE MOBILE POR PADRÃO (DESKTOP) */
+.mobile-drawer,
+.mobile-toggle {
+  display: none;
+}
+/* ================= MOBILE MENU ================= */
+
+.mobile-toggle {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+
+  .menu,
+  .menu-cta {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+  }
+
+  .mobile-toggle span {
+    width: 26px;
+    height: 2px;
+    background: #000;
+  }
+
+  .mobile-drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #F6F8FA;
+    z-index: 2000;
+    transform: translateX(-100%);
+    transition: 0.35s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-drawer.active {
+    transform: translateX(0);
+  }
+
+  .mobile-header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-bottom: 1px solid #E5E7EB;
+    font-weight: 500;
+  }
+
+  .mobile-back,
+  .mobile-close {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .mobile-title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .mobile-body {
+    flex: 1;
+    overflow-y: auto;
+  }
+
+  /* NÍVEL 1 */
+  .mobile-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-item {
+    padding: 18px;
+    border-bottom: 1px solid #E5E7EB;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .mobile-item:hover {
+    background: #f0f2f5;
+  }
+
+  /* NÍVEL 2 */
+  .mobile-sublist {
+    padding: 16px;
+  }
+
+  .mobile-section {
+    margin-bottom: 24px;
+  }
+
+  .mobile-section h4 {
+    font-size: 13px;
+    color: #E62445;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .mobile-section a {
+    display: block;
+    padding: 10px 0;
+    color: #2F2F2F;
+    text-decoration: none;
+    font-size: 15px;
+    border-bottom: 1px solid #E5E7EB;
+  }
+
+  .mobile-section a:last-child {
+    border-bottom: none;
+  }
+
+}
