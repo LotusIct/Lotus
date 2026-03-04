@@ -43,31 +43,31 @@ export default function Footer() {
           {/* Columns */}
           <div className="footer-links">
             <h4>Empresa</h4>
-            <a href="#">Casos de Sucesso</a>
-            <a href="#">Quem Somos</a>
-            <a href="#">Blog</a>
+            <a>Casos de Sucesso</a>
+            <a>Quem Somos</a>
+            <a>Blog</a>
           </div>
 
           <div className="footer-links">
             <h4>Soluções</h4>
-            <a href="#">Datacenter</a>
-            <a href="#">Video Surveillance</a>
-            <a href="#">IndustryX</a>
+            <a>Datacenter</a>
+            <a>Video Surveillance</a>
+            <a>IndustryX</a>
           </div>
 
           <div className="footer-links">
             <h4>Suporte</h4>
-            <a href="#">Entre em Contato</a>
-            <a href="#">Envio de Sugestão e Melhoria</a>
-            <a href="#">Canal de Denúncias</a>
+            <a>Entre em Contato</a>
+            <a>Envio de Sugestão e Melhoria</a>
+            <a>Canal de Denúncias</a>
           </div>
 
           <div className="footer-links">
             <h4>Compliance</h4>
-            <a href="#">Política Antisuborno e Anticorrupção</a>
-            <a href="#">Canal de Ética e Compliance</a>
-            <a href="#">Canal de Ética e Conduta</a>
-            <a href="#">Qualificação Econômica</a>
+            <a>Política Antisuborno e Anticorrupção</a>
+            <a>Canal de Ética e Compliance</a>
+            <a>Canal de Ética e Conduta</a>
+            <a>Qualificação Econômica</a>
           </div>
 
         </div>
