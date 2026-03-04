@@ -1,9 +1,10 @@
 import React from "react";
 import "./AboutSection.css";
-import aboutImg from "../assets/about.jpg";
 import { Target, Eye, ShieldCheck } from "lucide-react";
 
 export default function AboutSection() {
+  const aboutImg =
+  "http://www.lotusict.com/wp-content/uploads/2024/11/6553194f932ac0832aeb2d81_B1-6-p-16001.jpg";
   return (
     <section className="about-section">
       <div className="about-container">

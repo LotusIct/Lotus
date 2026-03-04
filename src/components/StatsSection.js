@@ -10,7 +10,7 @@ export default function ExcellenceSection() {
         {/* IMAGEM */}
         <div className="excellence-image">
           <img
-            src="/images/institucional/excellence.jpg"
+            src="http://www.lotusict.com/wp-content/uploads/2025/09/unnamed-1.png"
             alt="Excelência, transparência e comprometimento"
           />
           <div className="image-overlay"></div>

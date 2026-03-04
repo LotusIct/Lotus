@@ -7,7 +7,7 @@ const cases = [
     title: "Robô Quadrúpede para Inspeção e Segurança Industrial",
     description:
       "Implantado pela Lotus ICT na Subestação de Paracambi – RJ para a State Grid Brazil.",
-    image: "/images/cases/robo-quadrupede.jpg",
+    image: "http://www.lotusict.com/wp-content/uploads/2025/11/tuneis.png",
     link: "/cases/robo-quadrupede",
   },
   {
@@ -15,7 +15,7 @@ const cases = [
     title: "Manutenção de Salas de Reunião para Petrobras",
     description:
       "A Petrobras, maior empresa de petróleo do Brasil e da América Latina, contratou a Lotus ICT.",
-    image: "/images/cases/petrobras-salas.jpg",
+    image: "http://www.lotusict.com/wp-content/uploads/2025/09/Screenshot_97.png",
     link: "/cases/petrobras-salas",
   },
   {
@@ -23,7 +23,7 @@ const cases = [
     title: "Implementação da Rede MPLS para a ANP",
     description:
       "A ANP necessitava interligar todos os seus escritórios distribuídos pelo Brasil.",
-    image: "/images/cases/anp-mpls.jpg",
+    image: "http://www.lotusict.com/wp-content/uploads/2025/09/unnamed-2.png",
     link: "/cases/anp-mpls",
   },
   {
@@ -31,17 +31,10 @@ const cases = [
     title: "Sistema Inteligente de Gestão e Inspeção de UAVs",
     description:
       "Projeto para inspeção de linhas de transmissão da State Grid Brasil.",
-    image: "/images/cases/uav-stategrid.jpg",
+    image: "http://www.lotusict.com/wp-content/uploads/2025/09/Screenshot_100.png",
     link: "/cases/uav-stategrid",
   },
-  {
-    category: "Extra",
-    title: "Robô de Inspeção de Casco para a Petrobras",
-    description:
-      "Projeto focado em reduzir exposição ao risco em ambientes críticos.",
-    image: "/images/cases/robo-casco.jpg",
-    link: "/cases/robo-casco",
-  },
+  
 ];
 
 export default function SuccessCases() {

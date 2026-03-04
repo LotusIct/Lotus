@@ -184,7 +184,7 @@ const menu = [
 
         {/* LOGO */}
         <div className="logo">
-          <img src="/logo.png" alt="Lotus ICT" />
+          <img src="http://www.lotusict.com/wp-content/uploads/2025/03/Logo-Vertical-Lotus-ICT_Prancheta-1-copia.png" alt="Lotus ICT" />
         </div>
 
         {/* MENU DESKTOP */}
@@ -241,7 +241,6 @@ const menu = [
         <div className="menu-cta">
           <a href="/portal-servicos" className="cta-enterprise">
             Portal de Serviços
-            <span className="cta-line"></span>
           </a>
         </div>
 

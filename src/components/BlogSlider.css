@@ -69,9 +69,9 @@
   top:0;
   width:380px;
   height: 450px;
+  border: 1px solid #E62445;
   background:#fff;
   border-radius:24px;
-  box-shadow:0 20px 60px rgba(0,0,0,.08);
   transition:all .6s cubic-bezier(.2,.8,.2,1);
   overflow:hidden;
 }

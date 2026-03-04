@@ -1,16 +1,31 @@
 import React from 'react';
 import './PartnersTicker.css';
 
-import bmc from '../assets/partners/logo.jpg';
-import beyondtrust from '../assets/partners/logo.jpg';
-import fortinet from '../assets/partners/logo.jpg';
-import microsoft from '../assets/partners/logo.jpg';
-
 const partners = [
-  { name: 'BMC', logo: bmc },
-  { name: 'BeyondTrust', logo: beyondtrust },
-  { name: 'Fortinet', logo: fortinet },
-  { name: 'Microsoft', logo: microsoft },
+  { 
+    name: 'BMC', 
+    logo: 'https://www.lotusict.com/wp-content/uploads/2025/05/bmc_.png' 
+  },
+  { 
+    name: 'BeyondTrust', 
+    logo: 'https://www.lotusict.com/wp-content/uploads/2025/05/beyondtrust_.png' 
+  },
+  { 
+    name: 'Fortinet', 
+    logo: 'https://www.lotusict.com/wp-content/uploads/2025/05/fortniet_.png' 
+  },
+  { 
+    name: 'Microsoft', 
+    logo: 'https://www.lotusict.com/wp-content/uploads/2025/05/microsoft_.png' 
+  },
+  { 
+    name: 'IBM', 
+    logo: 'https://www.lotusict.com/wp-content/uploads/2025/05/ibm_.png' 
+  },
+  { 
+    name: 'Foxconn', 
+    logo: 'https://www.lotusict.com/wp-content/uploads/2025/05/foxconn_.png' 
+  },
 ];
 
 export default function PartnersTicker() {
@@ -34,7 +49,6 @@ export default function PartnersTicker() {
                 <div className="partner-logo">
                   <img src={partner.logo} alt={partner.name} />
                 </div>
-                <div className="partner-name">{partner.name}</div>
               </div>
             ))}
           </div>

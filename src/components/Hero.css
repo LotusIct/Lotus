@@ -3,7 +3,7 @@
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/hero.jpg"); /* coloque a imagem em /public */
+  background-image: url(http://www.lotusict.com/wp-content/uploads/2025/11/20251114-073355-e1763116891369.jpg); /* coloque a imagem em /public */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

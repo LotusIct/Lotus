@@ -33,6 +33,51 @@
 .portfolio-tabs button{
     font-size: 15px;
 }
+.portfolio-tabs-wrapper{
+  position:relative;
+  display:flex;
+  align-items:center;
+  margin-bottom:15px;
+}
+
+/* mantém scroll interno mas escondido */
+.portfolio-tabs{
+  display:flex;
+  gap:14px;
+  overflow-x:auto;
+  scroll-behavior:smooth;
+  padding:10px 40px; /* espaço para setas */
+  scrollbar-width:none;
+}
+
+.portfolio-tabs::-webkit-scrollbar{
+  display:none;
+}
+
+/* setas das tabs */
+.tabs-nav{
+  position:absolute;
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  border:none;
+  background:#000;
+  color:#fff;
+  cursor:pointer;
+  z-index:5;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:16px;
+  transition:.3s;
+}
+
+.tabs-nav:hover{
+  background:#E62445;
+}
+
+.tabs-nav.left{ right:10; }
+.tabs-nav.right{ right:0; }
 .tab{
   background:#fff;
   border:1px solid #ddd;
@@ -43,7 +88,19 @@
   white-space:nowrap;
   transition:.3s;
 }
+.tabs-nav{
+  display:none;
+}
 
+@media(max-width:1420px){
+  .tabs-nav{
+    display:flex;
+  }
+
+  .portfolio-tabs{
+    padding:10px 45px;
+  }
+}
 .tab:hover{
   border-color:#E62445;
   color:#E62445;

@@ -6,44 +6,23 @@ const posts = [
     category: "Datacenter",
     title: "A Lotus ICT está expandindo fronteiras!",
     excerpt: "Expansão estratégica e novos investimentos em infraestrutura.",
-    image: "/images/blog/datacenter1.jpg",
+    image: "http://www.lotusict.com/wp-content/uploads/2024/05/CONTROL-M.png",
     link: "/blog/expansao-fronteiras",
   },
   {
     category: "Datacenter",
     title: "Lotus ICT no BMC Helix Roadshow",
     excerpt: "Conectando inovação, IA e parcerias de sucesso.",
-    image: "/images/blog/bmc-roadshow.jpg",
+    image: "http://www.lotusict.com/wp-content/uploads/2022/07/data-center-with-server-racks-corridor-room-3d-render-digital-data-cloud-technology-scaled.jpg",
     link: "/blog/bmc-helix-roadshow",
   },
   {
     category: "Datacenter",
     title: "Lotus ICT expande parceria com a BMC Software",
     excerpt: "Início da operação nos Estados Unidos.",
-    image: "/images/blog/bmc-eua.jpg",
+    image: "http://www.lotusict.com/wp-content/uploads/2022/07/v617batch2-bb-01-technology-scaled.jpg",
     link: "/blog/expansao-bmc-eua",
-  },
-   {
-    category: "Datacenter",
-    title: "Lotus ICT expande parceria com a BMC Software",
-    excerpt: "Início da operação nos Estados Unidos.",
-    image: "/images/blog/bmc-eua.jpg",
-    link: "/blog/expansao-bmc-eua",
-  },
-   {
-    category: "Datacenter",
-    title: "Lotus ICT expande parceria com a BMC Software",
-    excerpt: "Início da operação nos Estados Unidos.",
-    image: "/images/blog/bmc-eua.jpg",
-    link: "/blog/expansao-bmc-eua",
-  },
-  {
-    category: "Video Surveillance",
-    title: "Parceria com a Petrobras completa 3 anos",
-    excerpt: "Excelência em soluções de Áudio e Vídeo.",
-    image: "/images/blog/petrobras.jpg",
-    link: "/blog/parceria-petrobras",
-  },
+  }
 ];
 
 export default function BlogSlider() {

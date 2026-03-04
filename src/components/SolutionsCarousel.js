@@ -8,25 +8,25 @@ const data = [
       {
         title: "CFTV",
         subtitle: "Monitoramento inteligente e segurança corporativa",
-        image: "/images/solutions/cftv.jpg",
+        image: "http://www.lotusict.com/wp-content/uploads/2024/11/inteligencia-artificial-em-cftv-9.jpg",
         href: "/solucoes/audio-video/cftv",
       },
       {
         title: "Painéis LED",
         subtitle: "Comunicação visual de alto impacto",
-        image: "/images/solutions/painel-led.jpg",
+        image: "http://www.lotusict.com/wp-content/uploads/2024/11/Imagem16.jpg",
         href: "/solucoes/audio-video/painel-led",
       },
       {
         title: "Videoconferência",
         subtitle: "Colaboração remota com qualidade enterprise",
-        image: "/images/solutions/videoconferencia.jpg",
+        image: "http://www.lotusict.com/wp-content/uploads/2024/11/Imagem12.png",
         href: "/solucoes/audio-video/videoconferencia",
       },
       {
         title: "Inovação IVA",
         subtitle: "Inteligência em vídeo e automação corporativa",
-        image: "/images/solutions/iva.jpg",
+        image: "http://www.lotusict.com/wp-content/uploads/2022/07/20220726-152200-scaled.jpg",
         href: "/solucoes/audio-video/inovacao-iva",
       },
     ],
@@ -38,49 +38,49 @@ const data = [
       {
         title: "Rede Multisserviços via Satélite",
         subtitle: "Conectividade global para operações críticas",
-        image: "/images/solutions/satelite.jpg",
+        image: "http://www.lotusict.com/wp-content/uploads/2024/10/59ECD93A-8D41-480E-815F-4220CE5E0E89.png",
         href: "/solucoes/infra/satelite",
       },
       {
         title: "Securelink",
         subtitle: "Conectividade segura e escalável",
-        image: "/images/solutions/securelink.jpg",
+        image: "http://www.lotusict.com/wp-content/uploads/2024/10/image.png",
         href: "/solucoes/infra/securelink",
       },
       {
         title: "Hardware as a Service",
         subtitle: "Infraestrutura como serviço sob demanda",
-        image: "/images/solutions/haas.jpg",
+        image: "http://www.lotusict.com/wp-content/uploads/2024/10/BAF16063-7417-4623-8CAC-AB5573BB8EF2.png",
         href: "/solucoes/infra/haas",
       },
       {
         title: "Network",
         subtitle: "Arquitetura de redes corporativas",
-        image: "/images/solutions/network.jpg",
+        image: "http://www.lotusict.com/wp-content/uploads/2024/10/254674A7-E329-45AA-B78B-429CF3714869.png",
         href: "/solucoes/infra/network",
       },
       {
         title: "Cibersegurança",
         subtitle: "Proteção digital para ambientes empresariais",
-        image: "/images/solutions/cyber.jpg",
+        image: "http://www.lotusict.com/wp-content/uploads/2024/11/DALL·E-2024-11-08-14.44.26-A-detailed-image-illustrating-cybersecurity-concepts_-a-futuristic-digital-interface-with-secure-locks-shields-and-a-network-of-interconnected-devic.webp",
         href: "/solucoes/infra/ciberseguranca",
       },
       {
         title: "Infraestrutura",
         subtitle: "Ambientes tecnológicos robustos e escaláveis",
-        image: "/images/solutions/infraestrutura.jpg",
+        image: "http://www.lotusict.com/wp-content/uploads/2024/06/Multi-Vendor-Operations.png",
         href: "/solucoes/infraestrutura",
       },
       {
         title: "Telecomunicações",
         subtitle: "Soluções completas em telecom corporativo",
-        image: "/images/solutions/telecom.jpg",
+        image: "http://www.lotusict.com/wp-content/uploads/2022/08/Copia-de-Banner-Doacao-para-Asilo-Verde-e-Vermelho.gif",
         href: "/solucoes/telecom",
       },
       {
         title: "Multi-Cloud",
         subtitle: "Gestão inteligente de múltiplas nuvens",
-        image: "/images/solutions/multicloud.jpg",
+        image: "http://www.lotusict.com/wp-content/uploads/2022/07/cloud-computing-banner-background-smart-city-scaled.jpg",
         href: "/solucoes/multi-cloud",
       },
     ],
@@ -92,7 +92,7 @@ const data = [
       {
         title: "Descoberta de Ativos – BMC",
         subtitle: "Mapeamento inteligente de ativos digitais",
-        image: "/images/solutions/bmc.jpg",
+        image: "http://www.lotusict.com/wp-content/uploads/2024/11/bmc-logo-23236FC835-seeklogo.com_.png",
         href: "/digital/bmc",
       },
       {
@@ -273,6 +273,11 @@ const data = [
   },
 ];
 export default function SolutionsPortfolio() {
+  const tabsRef = useRef(null);
+
+const scrollTabs = (dir) => {
+  tabsRef.current.scrollBy({ left: dir * 200, behavior: 'smooth' });
+};
   const [active, setActive] = useState(0);
   const trackRef = useRef(null);
 
@@ -288,18 +293,30 @@ export default function SolutionsPortfolio() {
         <p>Soluções tecnológicas inteligentes para impulsionar negócios</p>
       </div>
 
-      {/* Tabs */}
-      <div className="portfolio-tabs">
-        {data.map((cat, i) => (
-          <button
-            key={i}
-            className={i === active ? 'tab active' : 'tab'}
-            onClick={() => setActive(i)}
-          >
-            {cat.title}
-          </button>
-        ))}
-      </div>
+   {/* Tabs */}
+<div className="portfolio-tabs-wrapper">
+  
+  <button className="tabs-nav left" onClick={() => scrollTabs(-1)}>
+    ❮
+  </button>
+
+  <div className="portfolio-tabs" ref={tabsRef}>
+    {data.map((cat, i) => (
+      <button
+        key={i}
+        className={i === active ? 'tab active' : 'tab'}
+        onClick={() => setActive(i)}
+      >
+        {cat.title}
+      </button>
+    ))}
+  </div>
+
+  <button className="tabs-nav right" onClick={() => scrollTabs(1)}>
+    ❯
+  </button>
+
+</div>
 
       {/* Carousel */}
       <div className="portfolio-carousel">

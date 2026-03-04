@@ -25,7 +25,12 @@ export default function Footer() {
 
           {/* Logo + Address */}
           <div className="footer-brand">
-            <div className="footer-logo">Logo Lotus ICT</div>
+            <div className="footer-logo">
+              <img 
+                src="http://www.lotusict.com/wp-content/uploads/2025/03/Icone-Lotus-ICT_Prancheta-1-copia-12.png" 
+                alt="Lotus ICT" 
+              />
+            </div>
 
             <h4>Matriz LATAM</h4>
             <p>
