@@ -43,31 +43,31 @@ export default function Footer() {
           {/* Columns */}
           <div className="footer-links">
             <h4>Empresa</h4>
-            <a href="#" role="button" onClick={(e) => e.preventDefault()}>Casos de Sucesso</a>
-            <a href="#" role="button" onClick={(e) => e.preventDefault()}>Quem Somos</a>
-            <a href="#" role="button" onClick={(e) => e.preventDefault()}>Blog</a>
+            <a href="https://www.lotusict.com/inspecoes-aereas-inteligentes-com-precisao-e-seguranca/" role="button" onClick={(e) => e.preventDefault()}>Casos de Sucesso</a>
+            <a href="https://www.lotusict.com/inspecoes-aereas-inteligentes-com-precisao-e-seguranca/" role="button" onClick={(e) => e.preventDefault()}>Quem Somos</a>
+            <a href="https://www.lotusict.com/inspecoes-aereas-inteligentes-com-precisao-e-seguranca/" role="button" onClick={(e) => e.preventDefault()}>Blog</a>
           </div>
 
           <div className="footer-links">
             <h4>Soluções</h4>
-            <a href="#" role="button" onClick={(e) => e.preventDefault()}>Datacenter</a>
-            <a href="#" role="button" onClick={(e) => e.preventDefault()}>Video Surveillance</a>
-            <a href="#" role="button" onClick={(e) => e.preventDefault()}>IndustryX</a>
+            <a href="https://www.lotusict.com/inspecoes-aereas-inteligentes-com-precisao-e-seguranca/" role="button" onClick={(e) => e.preventDefault()}>Datacenter</a>
+            <a href="https://www.lotusict.com/inspecoes-aereas-inteligentes-com-precisao-e-seguranca/" role="button" onClick={(e) => e.preventDefault()}>Video Surveillance</a>
+            <a href="https://www.lotusict.com/inspecoes-aereas-inteligentes-com-precisao-e-seguranca/" role="button" onClick={(e) => e.preventDefault()}>IndustryX</a>
           </div>
 
           <div className="footer-links">
             <h4>Suporte</h4>
-            <a href="#" role="button" onClick={(e) => e.preventDefault()}>Entre em Contato</a>
-            <a href="#" role="button" onClick={(e) => e.preventDefault()}>Envio de Sugestão e Melhoria</a>
-            <a href="#" role="button" onClick={(e) => e.preventDefault()}>Canal de Denúncias</a>
+            <a href="https://www.lotusict.com/inspecoes-aereas-inteligentes-com-precisao-e-seguranca/" role="button" onClick={(e) => e.preventDefault()}>Entre em Contato</a>
+            <a href="https://www.lotusict.com/inspecoes-aereas-inteligentes-com-precisao-e-seguranca/" role="button" onClick={(e) => e.preventDefault()}>Envio de Sugestão e Melhoria</a>
+            <a href="https://www.lotusict.com/inspecoes-aereas-inteligentes-com-precisao-e-seguranca/" role="button" onClick={(e) => e.preventDefault()}>Canal de Denúncias</a>
           </div>
 
           <div className="footer-links">
             <h4>Compliance</h4>
-            <a href="#" role="button" onClick={(e) => e.preventDefault()}>Política Antisuborno e Anticorrupção</a>
-            <a href="#" role="button" onClick={(e) => e.preventDefault()}>Canal de Ética e Compliance</a>
-            <a href="#" role="button" onClick={(e) => e.preventDefault()}>Canal de Ética e Conduta</a>
-            <a href="#" role="button" onClick={(e) => e.preventDefault()}>Qualificação Econômica</a>
+            <a href="https://www.lotusict.com/inspecoes-aereas-inteligentes-com-precisao-e-seguranca/" role="button" onClick={(e) => e.preventDefault()}>Política Antisuborno e Anticorrupção</a>
+            <a href="https://www.lotusict.com/inspecoes-aereas-inteligentes-com-precisao-e-seguranca/" role="button" onClick={(e) => e.preventDefault()}>Canal de Ética e Compliance</a>
+            <a href="https://www.lotusict.com/inspecoes-aereas-inteligentes-com-precisao-e-seguranca/" role="button" onClick={(e) => e.preventDefault()}>Canal de Ética e Conduta</a>
+            <a href="https://www.lotusict.com/inspecoes-aereas-inteligentes-com-precisao-e-seguranca/" role="button" onClick={(e) => e.preventDefault()}>Qualificação Econômica</a>
           </div>
 
         </div>
